@@ -5,6 +5,7 @@ import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
+import Header from "./components/header/header.component";
 
 //   fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
 // 		.then((res) => {
@@ -14,9 +15,11 @@ import ShopPage from "./pages/shop/shop.component";
 // 			console.log(data);
 // 		})
 // 		.catch((err) => console.log(err));
+
 function App() {
 	return (
 		<div>
+			<Header />
 			<Switch>
 				<Route exact path="/" component={HomePage} />
 				<Route path="/shop" component={ShopPage} />
